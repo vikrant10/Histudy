@@ -1,0 +1,20 @@
+1. Inside <head> tag
+    
+    <!--Start Common Header/Footer-->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- End Common Header/Footer-->
+
+2. Inside body tag but at the top
+    
+    <div id="header_content"></div>
+
+3. Inside body tag but at the bottom
+    
+    <div id="footer_content"></div>
+
+4. After body tag </body> but before </html> tag
+
+    <script type="text/javascript">
+        $('#header_content').load('header.html');
+        $('#footer_content').load('footer.html');
+    </script>

@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Course Dashboard - Online Courses & Education</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/plugins/sal.css">
+    <link rel="stylesheet" href="assets/css/plugins/feather.css">
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/euclid-circulara.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnify.css">
+    <link rel="stylesheet" href="assets/css/plugins/odometer.css">
+    <link rel="stylesheet" href="assets/css/plugins/animation.css">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnigy-popup.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Start Common Header/Footer-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- End Common Header/Footer-->
+
+</head>
+
+<body class="rbt-header-sticky">
+
+
+    <div id="header_content"></div>
+
+
+    <div class="rbt-page-banner-wrapper">
+        <!-- Start Banner BG Image  -->
+        <div class="rbt-banner-image"></div>
+        <!-- End Banner BG Image  -->
+        <div class="rbt-banner-content">
+
+            <!-- Start Banner Content Top  -->
+            <div class="rbt-banner-content-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Start Breadcrumb Area  -->
+                            <ul class="page-list">
+                                <li class="rbt-breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li>
+                                    <div class="icon-right"><i class="feather-chevron-right"></i></div>
+                                </li>
+                                <li class="rbt-breadcrumb-item active">All Courses</li>
+                            </ul>
+                            <!-- End Breadcrumb Area  -->
+
+                            <div class=" title-wrapper">
+                                <h1 class="title mb--0">All Courses</h1>
+                                <a href="#" class="rbt-badge-2">
+                                    <div class="image">🎉</div> 50 Courses
+                                </a>
+                            </div>
+
+                            <p class="description">Courses that help beginner to become true unicorns. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Banner Content Top  -->
+            <!-- Start Course Top  -->
+            <div class="rbt-course-top-wrapper mt--40">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+
+                        <div class="col-lg-5 col-md-12">
+                            <div class="rbt-sorting-list d-flex flex-wrap align-items-center">
+                                <div class="rbt-short-item switch-layout-container">
+                                    <ul class="course-switch-layout">
+                                        <li class="course-switch-item"><button class="rbt-grid-view active"
+                                                title="Grid Layout"><i class="feather-grid"></i> <span
+                                                    class="text">Grid</span></button></li>
+                                        <li class="course-switch-item"><button class="rbt-list-view"
+                                                title="List Layout"><i class="feather-list"></i> <span
+                                                    class="text">List</span></button></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 mt--60">
+                            <ul class="rbt-portfolio-filter filter-tab-button justify-content-start nav nav-tabs"
+                                id="rbt-myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all"
+                                        type="button" role="tab" aria-controls="all" aria-selected="true"><span
+                                            class="filter-text">All
+                                            Course</span> <span class="course-number">06</span></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button id="featured-tab" data-bs-toggle="tab" data-bs-target="#datacourses"
+                                        type="button" role="tab" aria-controls="datacourses" aria-selected="false"><span
+                                            class="filter-text">Data Courses</span> <span
+                                            class="course-number">05</span></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button id="popular-tab" data-bs-toggle="tab" data-bs-target="#webdevelopment"
+                                        type="button" role="tab" aria-controls="webdevelopment"
+                                        aria-selected="false"><span class="filter-text">Web Development</span> <span
+                                            class="course-number">00</span></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button id="trending-tab" data-bs-toggle="tab" data-bs-target="#aviation"
+                                        type="button" role="tab" aria-controls="aviation" aria-selected="false"><span
+                                            class="filter-text">Aviation</span> <span
+                                            class="course-number">01</span></button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button id="latest-tab" data-bs-toggle="tab" data-bs-target="#codinglanguage"
+                                        type="button" role="tab" aria-controls="codinglanguage"
+                                        aria-selected="false"><span class="filter-text">Coding Language</span> <span
+                                            class="course-number">01</span></button>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- End Course Top  -->
+        </div>
+    </div>
+
+    <div class="rbt-section-overlayping-top rbt-section-gapBottom">
+        <div class="container">
+            <!-- Start Card Area -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="tab-content" id="rbt-myTabContent">
+                        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                            <div class="rbt-course-grid-column">
+
+                                <!-- Start Single Course  -->
+                                <div class="course-grid-3">
+                                    <div class="rbt-card variation-01 rbt-hover">
+                                        <div class="rbt-card-img">
+                                            <a href="microsoft-excel-beginner-to-advance.html">
+                                                <img src="assets/images/course/language-academy-01.png"
+                                                    alt="Card image">
+                                                <div class="rbt-badge-3 bg-white">
+                                                    <span>-40%</span>
+                                                    <span>Off</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="rbt-card-body">
+                                            <div class="rbt-card-top">
+                                                <div class="rbt-review">
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="rating-count"> (150 Reviews)</span>
+                                                </div>
+
+                                            </div>
+
+                                            <h4 class="rbt-card-title"><a href="microsoft-excel-beginner-to-advance.html">Microsoft Excel
+                                                    Course for Beginner to Advance</a>
+                                            </h4>
+
+                                            <ul class="rbt-meta">
+                                                <li><i class="feather-book"></i>12 Lessons</li>
+                                                <li><i class="feather-users"></i>250 Students</li>
+                                            </ul>
+
+                                            <p class="rbt-card-text">Unlock the power of your data! Take control of your
+                                                spreadsheets with this Microsoft Excel course. From beginner to pro,
+                                                this course will teach you everything you need to know about Microsoft
+                                                Excel. </p>
+                                            <div class="rbt-author-meta mb--10">
+                                                <div class="rbt-avater">
+                                                    <a href="#">
+                                                        <img src="assets/images/client/avatar-02.jpg"
+                                                            alt="Vikrant Tinkhede">
+                                                    </a>
+                                                </div>
+                                                <div class="rbt-author-info">
+                                                    By <a href="profile.html">Vikrant Tinkhede</a> In <a href="#">Data
+                                                        Courses</a>
+                                                </div>
+                                            </div>
+                                            <div class="rbt-card-bottom">
+                                                <div class="rbt-price">
+                                                    <span class="current-price">₹4,200/-</span>
+                                                    <span class="off-price">₹7,000/-</span>
+                                                </div>
+                                                <a class="rbt-btn-link" href="microsoft-excel-beginner-to-advance.html">Enroll
+                                                    Now<i class="feather-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Course  -->
+
+                                <!-- Start Single Course  -->
+                                <div class="course-grid-3">
+                                    <div class="rbt-card variation-01 rbt-hover">
+                                        <div class="rbt-card-img">
+                                            <a href="sql-beginner-to-advance.html">
+                                                <img src="assets/images/course/language-academy-02.jpg"
+                                                    alt="Card image">
+                                                <div class="rbt-badge-3 bg-white">
+                                                    <span>-50%</span>
+                                                    <span>Off</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="rbt-card-body">
+                                            <div class="rbt-card-top">
+                                                <div class="rbt-review">
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="rating-count"> (1499 Reviews)</span>
+                                                </div>
+
+                                            </div>
+                                            <h4 class="rbt-card-title"><a href="sql-beginner-to-advance.html">SQL Beginner to
+                                                    Advance</a>
+                                            </h4>
+                                            <ul class="rbt-meta">
+                                                <li><i class="feather-book"></i>12 Lessons</li>
+                                                <li><i class="feather-users"></i>4512 Students</li>
+                                            </ul>
+
+                                            <p class="rbt-card-text">Turn your data into insights! Learn SQL, the
+                                                language of databases. Unlock the secrets of your data with SQL, the key
+                                                to relational databases. Master SQL, the essential skill for data
+                                                analysis, reporting, and more!</p>
+                                            <div class="rbt-author-meta mb--10">
+                                                <div class="rbt-avater">
+                                                    <a href="#">
+                                                        <img src="assets/images/client/avatar-02.jpg"
+                                                            alt="Vikrant Tinkhede">
+                                                    </a>
+                                                </div>
+                                                <div class="rbt-author-info">
+                                                    By <a href="profile.html">Vikrant Tinkhede</a> In <a href="#">Data
+                                                        Courses</a>
+                                                </div>
+                                            </div>
+                                            <div class="rbt-card-bottom">
+                                                <div class="rbt-price">
+                                                    <span class="current-price">₹10,000/-</span>
+                                                    <span class="off-price">₹20,000/-</span>
+                                                </div>
+                                                <a class="rbt-btn-link" href="sql-beginner-to-advance.html">Enroll
+                                                    Now<i class="feather-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Course  -->
+
+                                <!-- Start Single Course  -->
+                                <div class="course-grid-3">
+                                    <div class="rbt-card variation-01 rbt-hover">
+                                        <div class="rbt-card-img">
+                                            <a href="get-expert-in-tableau.html">
+                                                <img src="assets/images/course/language-academy-03.jpg"
+                                                    alt="Card image">
+                                                <div class="rbt-badge-3 bg-white">
+                                                    <span>-30%</span>
+                                                    <span>Off</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="rbt-card-body">
+                                            <div class="rbt-card-top">
+                                                <div class="rbt-review">
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="rating-count"> (505 Reviews)</span>
+                                                </div>
+
+                                            </div>
+                                            <h4 class="rbt-card-title"><a href="get-expert-in-tableau.html">Get Expert in
+                                                    Tableau</a>
+                                            </h4>
+                                            <ul class="rbt-meta">
+                                                <li><i class="feather-book"></i>8 Lessons</li>
+                                                <li><i class="feather-users"></i>3005 Students</li>
+                                            </ul>
+                                            <p class="rbt-card-text">Stop drowning in data, start telling stories! Learn
+                                                powerful data visualization with Tableau. Make your data sing! This
+                                                Tableau course will equip you to create clear and impactful
+                                                visualizations.</p>
+
+                                            <div class="rbt-author-meta mb--20">
+                                                <div class="rbt-avater">
+                                                    <a href="#">
+                                                        <img src="assets/images/client/avatar-02.jpg"
+                                                            alt="Vikrant Tinkhede">
+                                                    </a>
+                                                </div>
+                                                <div class="rbt-author-info">
+                                                    By <a href="profile.html">Vikrant Tinkhede</a> In <a href="#">Data
+                                                        Courses</a>
+                                                </div>
+                                            </div>
+                                            <div class="rbt-card-bottom">
+                                                <div class="rbt-price">
+                                                    <span class="current-price">₹15,400/-</span>
+                                                    <span class="off-price">₹22,000/-</span>
+                                                </div>
+                                                <a class="rbt-btn-link" href="get-expert-in-tableau.html">Enroll Now <i
+                                                        class="feather-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Course  -->
+
+                                <!-- Start Single Course  -->
+                                <div class="course-grid-3">
+                                    <div class="rbt-card variation-01 rbt-hover">
+                                        <div class="rbt-card-img">
+                                            <a href="python-for-data-science.html">
+                                                <img src="assets/images/course/language-academy-04.jpg"
+                                                    alt="Card image">
+                                                <div class="rbt-badge-3 bg-white">
+                                                    <span>-40%</span>
+                                                    <span>Off</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="rbt-card-body">
+                                            <div class="rbt-card-top">
+                                                <div class="rbt-review">
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="rating-count"> (1555 Reviews)</span>
+                                                </div>
+                                            </div>
+
+                                            <h4 class="rbt-card-title"><a href="python-for-data-science.html">Python for Data
+                                                    Science</a>
+                                            </h4>
+                                            <ul class="rbt-meta">
+                                                <li><i class="feather-book"></i>20 Lessons</li>
+                                                <li><i class="feather-users"></i>1598 Students</li>
+                                            </ul>
+                                            <p class="rbt-card-text">Learn Python, the versatile language for everything
+                                                from data science to web development.</p>
+                                            <div class="rbt-author-meta mb--20">
+                                                <div class="rbt-avater">
+                                                    <a href="#">
+                                                        <img src="assets/images/client/avatar-02.jpg"
+                                                            alt="Vikrant Tinkhede">
+                                                    </a>
+                                                </div>
+                                                <div class="rbt-author-info">
+                                                    By <a href="profile.html">Vikrant Tinkhede</a> In <a href="#">Data
+                                                        Courses</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="rbt-card-bottom">
+                                                <div class="rbt-price">
+                                                    <span class="current-price">₹8,400/-</span>
+                                                    <span class="off-price">₹14,000/-</span>
+                                                </div>
+                                                <a class="rbt-btn-link" href="python-for-data-science.html">Enroll now<i class="feather-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Course  -->
+
+                                <!-- Start Single Course  -->
+                                <div class="course-grid-3">
+                                    <div class="rbt-card variation-01 rbt-hover">
+                                        <div class="rbt-card-img">
+                                            <a href="data-analytics.html">
+                                                <img src="assets/images/course/language-academy-05.jpg"
+                                                    alt="Card image">
+                                                <div class="rbt-badge-3 bg-white">
+                                                    <span>-67.5%</span>
+                                                    <span>Off</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="rbt-card-body">
+                                            <div class="rbt-card-top">
+                                                <div class="rbt-review">
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="rating-count"> (854 Reviews)</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="rbt-card-title"><a href="data-analytics.html">Data Analytics
+                                                    Course</a>
+                                            </h4>
+                                            <ul class="rbt-meta">
+                                                <li><i class="feather-book"></i>12 Lessons</li>
+                                                <li><i class="feather-users"></i>1523 Students</li>
+                                            </ul>
+                                            <p class="rbt-card-text">Transform raw data into actionable insights! Learn
+                                                the art and science of data analytics</p>
+                                            <div class="rbt-author-meta mb--20">
+                                                <div class="rbt-avater">
+                                                    <a href="#">
+                                                        <img src="assets/images/client/avatar-02.jpg"
+                                                            alt="Vikrant Tinkhede">
+                                                    </a>
+                                                </div>
+                                                <div class="rbt-author-info">
+                                                    By <a href="profile.html">Vikrant Tinkhede</a> In <a href="#">Data
+                                                        Courses</a>
+                                                </div>
+                                            </div>
+                                            <div class="rbt-card-bottom">
+                                                <div class="rbt-price">
+                                                    <span class="current-price">₹26,000/-</span>
+                                                    <span class="off-price">₹80,000/-</span>
+                                                </div>
+                                                <a class="rbt-btn-link left-icon" href="data-analytics.html"> Enroll Now<i class="feather-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Course  -->
+
+                                <!-- Start Single Course  -->
+                                <div class="course-grid-3">
+                                    <div class="rbt-card variation-01 rbt-hover">
+                                        <div class="rbt-card-img">
+                                            <a href="general-navigation.html">
+                                                <img src="assets/images/course/language-academy-06.jpg"
+                                                    alt="Card image">
+                                                <div class="rbt-badge-3 bg-white">
+                                                    <span>-90%</span>
+                                                    <span>Off</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="rbt-card-body">
+                                            <div class="rbt-card-top">
+                                                <div class="rbt-review">
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="rating-count"> (585 Reviews)</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="rbt-card-title"><a href="general-navigation.html">General
+                                                    Navigation</a>
+                                            </h4>
+                                            <ul class="rbt-meta">
+                                                <li><i class="feather-book"></i>8 Lessons</li>
+                                                <li><i class="feather-users"></i>303 Students</li>
+                                            </ul>
+                                            <p class="rbt-card-text">Chart your course for adventure! Learn essential
+                                                navigation skills for hiking, sailing, or flying.</p>
+
+                                            <div class="rbt-author-meta mb--20">
+                                                <div class="rbt-avater">
+                                                    <a href="#">
+                                                        <img src="assets/images/client/avatar-02.jpg"
+                                                            alt="Vikrant Tinkhede">
+                                                    </a>
+                                                </div>
+                                                <div class="rbt-author-info">
+                                                    By <a href="profile.html">Vikrant Tinkhede</a> In <a
+                                                        href="#">Aviation</a>
+                                                </div>
+                                            </div>
+                                            <div class="rbt-card-bottom">
+                                                <div class="rbt-price">
+                                                    <span class="current-price">₹10,000/-</span>
+                                                    <span class="off-price">₹1,00,000/-</span>
+                                                </div>
+                                                <a class="rbt-btn-link" href="general-navigation.html">Enroll Now
+                                                    <i class="feather-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Course  -->
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="datacourses" role="tabpanel" aria-labelledby="datacourses-tab">
+                            <div class="rbt-course-grid-column">
+
+                                <!-- Start Single Course  -->
+                                <div class="course-grid-3">
+                                    <div class="rbt-card variation-01 rbt-hover">
+                                        <div class="rbt-card-img">
+                                            <a href="microsoft-excel-beginner-to-advance.html">
+                                                <img src="assets/images/course/language-academy-01.png"
+                                                    alt="Card image">
+                                                <div class="rbt-badge-3 bg-white">
+                                                    <span>-40%</span>
+                                                    <span>Off</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="rbt-card-body">
+                                            <div class="rbt-card-top">
+                                                <div class="rbt-review">
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="rating-count"> (150 Reviews)</span>
+                                                </div>
+
+                                            </div>
+
+                                            <h4 class="rbt-card-title"><a href="microsoft-excel-beginner-to-advance.html">Microsoft Excel
+                                                    Course for Beginner to Advance</a>
+                                            </h4>
+
+                                            <ul class="rbt-meta">
+                                                <li><i class="feather-book"></i>12 Lessons</li>
+                                                <li><i class="feather-users"></i>250 Students</li>
+                                            </ul>
+
+                                            <p class="rbt-card-text">Unlock the power of your data! Take control of your
+                                                spreadsheets with this Microsoft Excel course. From beginner to pro,
+                                                this course will teach you everything you need to know about Microsoft
+                                                Excel. </p>
+                                            <div class="rbt-author-meta mb--10">
+                                                <div class="rbt-avater">
+                                                    <a href="#">
+                                                        <img src="assets/images/client/avatar-02.jpg"
+                                                            alt="Vikrant Tinkhede">
+                                                    </a>
+                                                </div>
+                                                <div class="rbt-author-info">
+                                                    By <a href="profile.html">Vikrant Tinkhede</a> In <a href="#">Data
+                                                        Courses</a>
+                                                </div>
+                                            </div>
+                                            <div class="rbt-card-bottom">
+                                                <div class="rbt-price">
+                                                    <span class="current-price">₹4,200/-</span>
+                                                    <span class="off-price">₹7,000/-</span>
+                                                </div>
+                                                <a class="rbt-btn-link" href="microsoft-excel-beginner-to-advance.html">Enroll
+                                                    Now<i class="feather-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Course  -->
+
+                                <!-- Start Single Course  -->
+                                <div class="course-grid-3">
+                                    <div class="rbt-card variation-01 rbt-hover">
+                                        <div class="rbt-card-img">
+                                            <a href="sql-beginner-to-advance.html">
+                                                <img src="assets/images/course/language-academy-02.jpg"
+                                                    alt="Card image">
+                                                <div class="rbt-badge-3 bg-white">
+                                                    <span>-50%</span>
+                                                    <span>Off</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="rbt-card-body">
+                                            <div class="rbt-card-top">
+                                                <div class="rbt-review">
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="rating-count"> (1499 Reviews)</span>
+                                                </div>
+
+                                            </div>
+                                            <h4 class="rbt-card-title"><a href="sql-beginner-to-advance.html">SQL Beginner to
+                                                    Advance</a>
+                                            </h4>
+                                            <ul class="rbt-meta">
+                                                <li><i class="feather-book"></i>12 Lessons</li>
+                                                <li><i class="feather-users"></i>4512 Students</li>
+                                            </ul>
+
+                                            <p class="rbt-card-text">Turn your data into insights! Learn SQL, the
+                                                language of databases. Unlock the secrets of your data with SQL, the key
+                                                to relational databases. Master SQL, the essential skill for data
+                                                analysis, reporting, and more!</p>
+                                            <div class="rbt-author-meta mb--10">
+                                                <div class="rbt-avater">
+                                                    <a href="#">
+                                                        <img src="assets/images/client/avatar-02.jpg"
+                                                            alt="Vikrant Tinkhede">
+                                                    </a>
+                                                </div>
+                                                <div class="rbt-author-info">
+                                                    By <a href="profile.html">Vikrant Tinkhede</a> In <a href="#">Data
+                                                        Courses</a>
+                                                </div>
+                                            </div>
+                                            <div class="rbt-card-bottom">
+                                                <div class="rbt-price">
+                                                    <span class="current-price">₹10,000/-</span>
+                                                    <span class="off-price">₹20,000/-</span>
+                                                </div>
+                                                <a class="rbt-btn-link" href="sql-beginner-to-advance.html">Enroll
+                                                    Now<i class="feather-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Course  -->
+
+                                <!-- Start Single Course  -->
+                                <div class="course-grid-3">
+                                    <div class="rbt-card variation-01 rbt-hover">
+                                        <div class="rbt-card-img">
+                                            <a href="get-expert-in-tableau.html">
+                                                <img src="assets/images/course/language-academy-03.jpg"
+                                                    alt="Card image">
+                                                <div class="rbt-badge-3 bg-white">
+                                                    <span>-30%</span>
+                                                    <span>Off</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="rbt-card-body">
+                                            <div class="rbt-card-top">
+                                                <div class="rbt-review">
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="rating-count"> (505 Reviews)</span>
+                                                </div>
+
+                                            </div>
+                                            <h4 class="rbt-card-title"><a href="get-expert-in-tableau.html">Get Expert in
+                                                    Tableau</a>
+                                            </h4>
+                                            <ul class="rbt-meta">
+                                                <li><i class="feather-book"></i>8 Lessons</li>
+                                                <li><i class="feather-users"></i>3005 Students</li>
+                                            </ul>
+                                            <p class="rbt-card-text">Stop drowning in data, start telling stories! Learn
+                                                powerful data visualization with Tableau. Make your data sing! This
+                                                Tableau course will equip you to create clear and impactful
+                                                visualizations.</p>
+
+                                            <div class="rbt-author-meta mb--20">
+                                                <div class="rbt-avater">
+                                                    <a href="#">
+                                                        <img src="assets/images/client/avatar-02.jpg"
+                                                            alt="Vikrant Tinkhede">
+                                                    </a>
+                                                </div>
+                                                <div class="rbt-author-info">
+                                                    By <a href="profile.html">Vikrant Tinkhede</a> In <a href="#">Data
+                                                        Courses</a>
+                                                </div>
+                                            </div>
+                                            <div class="rbt-card-bottom">
+                                                <div class="rbt-price">
+                                                    <span class="current-price">₹15,400/-</span>
+                                                    <span class="off-price">₹22,000/-</span>
+                                                </div>
+                                                <a class="rbt-btn-link" href="get-expert-in-tableau.html">Enroll Now <i
+                                                        class="feather-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Course  -->
+
+                                <!-- Start Single Course  -->
+                                <div class="course-grid-3">
+                                    <div class="rbt-card variation-01 rbt-hover">
+                                        <div class="rbt-card-img">
+                                            <a href="python-for-data-science.html">
+                                                <img src="assets/images/course/language-academy-04.jpg"
+                                                    alt="Card image">
+                                                <div class="rbt-badge-3 bg-white">
+                                                    <span>-40%</span>
+                                                    <span>Off</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="rbt-card-body">
+                                            <div class="rbt-card-top">
+                                                <div class="rbt-review">
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="rating-count"> (1555 Reviews)</span>
+                                                </div>
+                                            </div>
+
+                                            <h4 class="rbt-card-title"><a href="python-for-data-science.html">Python for Data
+                                                    Science</a>
+                                            </h4>
+                                            <ul class="rbt-meta">
+                                                <li><i class="feather-book"></i>20 Lessons</li>
+                                                <li><i class="feather-users"></i>1598 Students</li>
+                                            </ul>
+                                            <p class="rbt-card-text">Learn Python, the versatile language for everything
+                                                from data science to web development.</p>
+                                            <div class="rbt-author-meta mb--20">
+                                                <div class="rbt-avater">
+                                                    <a href="#">
+                                                        <img src="assets/images/client/avatar-02.jpg"
+                                                            alt="Vikrant Tinkhede">
+                                                    </a>
+                                                </div>
+                                                <div class="rbt-author-info">
+                                                    By <a href="profile.html">Vikrant Tinkhede</a> In <a href="#">Data
+                                                        Courses</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="rbt-card-bottom">
+                                                <div class="rbt-price">
+                                                    <span class="current-price">₹8,400/-</span>
+                                                    <span class="off-price">₹14,000/-</span>
+                                                </div>
+                                                <a class="rbt-btn-link" href="python-for-data-science.html">Enroll Now<i class="feather-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Course  -->
+
+                                <!-- Start Single Course  -->
+                                <div class="course-grid-3">
+                                    <div class="rbt-card variation-01 rbt-hover">
+                                        <div class="rbt-card-img">
+                                            <a href="data-analytics.html">
+                                                <img src="assets/images/course/language-academy-05.jpg"
+                                                    alt="Card image">
+                                                <div class="rbt-badge-3 bg-white">
+                                                    <span>-67.5%</span>
+                                                    <span>Off</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="rbt-card-body">
+                                            <div class="rbt-card-top">
+                                                <div class="rbt-review">
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="rating-count"> (854 Reviews)</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="rbt-card-title"><a href="data-analytics.html">Data Analytics
+                                                    Course</a>
+                                            </h4>
+                                            <ul class="rbt-meta">
+                                                <li><i class="feather-book"></i>12 Lessons</li>
+                                                <li><i class="feather-users"></i>1523 Students</li>
+                                            </ul>
+                                            <p class="rbt-card-text">Transform raw data into actionable insights! Learn
+                                                the art and science of data analytics</p>
+                                            <div class="rbt-author-meta mb--20">
+                                                <div class="rbt-avater">
+                                                    <a href="#">
+                                                        <img src="assets/images/client/avatar-02.jpg"
+                                                            alt="Vikrant Tinkhede">
+                                                    </a>
+                                                </div>
+                                                <div class="rbt-author-info">
+                                                    By <a href="profile.html">Vikrant Tinkhede</a> In <a href="#">Data
+                                                        Courses</a>
+                                                </div>
+                                            </div>
+                                            <div class="rbt-card-bottom">
+                                                <div class="rbt-price">
+                                                    <span class="current-price">₹26,000/-</span>
+                                                    <span class="off-price">₹80,000/-</span>
+                                                </div>
+                                                <a class="rbt-btn-link left-icon" href="data-analytics.html"> Enroll Now<i class="feather-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Course  -->
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="webdevelopment" role="tabpanel"
+                            aria-labelledby="webdevelopment-tab">
+                            <div class="rbt-course-grid-column">
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="aviation" role="tabpanel" aria-labelledby="aviation-tab">
+                            <div class="rbt-course-grid-column">
+                                <!-- Start Single Course  -->
+                                <div class="course-grid-3">
+                                    <div class="rbt-card variation-01 rbt-hover">
+                                        <div class="rbt-card-img">
+                                            <a href="general-navigation.html">
+                                                <img src="assets/images/course/language-academy-06.jpg"
+                                                    alt="Card image">
+                                                <div class="rbt-badge-3 bg-white">
+                                                    <span>-90%</span>
+                                                    <span>Off</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="rbt-card-body">
+                                            <div class="rbt-card-top">
+                                                <div class="rbt-review">
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="rating-count"> (585 Reviews)</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="rbt-card-title"><a href="general-navigation.html">General
+                                                    Navigation</a>
+                                            </h4>
+                                            <ul class="rbt-meta">
+                                                <li><i class="feather-book"></i>8 Lessons</li>
+                                                <li><i class="feather-users"></i>303 Students</li>
+                                            </ul>
+                                            <p class="rbt-card-text">Chart your course for adventure! Learn essential
+                                                navigation skills for hiking, sailing, or flying.</p>
+
+                                            <div class="rbt-author-meta mb--20">
+                                                <div class="rbt-avater">
+                                                    <a href="#">
+                                                        <img src="assets/images/client/avatar-02.jpg"
+                                                            alt="Vikrant Tinkhede">
+                                                    </a>
+                                                </div>
+                                                <div class="rbt-author-info">
+                                                    By <a href="profile.html">Vikrant Tinkhede</a> In <a
+                                                        href="#">Aviation</a>
+                                                </div>
+                                            </div>
+                                            <div class="rbt-card-bottom">
+                                                <div class="rbt-price">
+                                                    <span class="current-price">₹10,000/-</span>
+                                                    <span class="off-price">₹1,00,000/-</span>
+                                                </div>
+                                                <a class="rbt-btn-link" href="general-navigation.html">Enroll Now<i class="feather-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Course  -->
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="codinglanguage" role="tabpanel"
+                            aria-labelledby="codinglanguage-tab">
+                            <div class="rbt-course-grid-column">
+                                <!-- Start Single Course  -->
+                                <div class="course-grid-3">
+                                    <div class="rbt-card variation-01 rbt-hover">
+                                        <div class="rbt-card-img">
+                                            <a href="python-for-data-science.html">
+                                                <img src="assets/images/course/language-academy-04.jpg"
+                                                    alt="Card image">
+                                                <div class="rbt-badge-3 bg-white">
+                                                    <span>-40%</span>
+                                                    <span>Off</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="rbt-card-body">
+                                            <div class="rbt-card-top">
+                                                <div class="rbt-review">
+                                                    <div class="rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <span class="rating-count"> (1555 Reviews)</span>
+                                                </div>
+                                            </div>
+
+                                            <h4 class="rbt-card-title"><a href="python-for-data-science.html">Python for Data
+                                                    Science</a>
+                                            </h4>
+                                            <ul class="rbt-meta">
+                                                <li><i class="feather-book"></i>20 Lessons</li>
+                                                <li><i class="feather-users"></i>1598 Students</li>
+                                            </ul>
+                                            <p class="rbt-card-text">Learn Python, the versatile language for everything
+                                                from data science to web development.</p>
+                                            <div class="rbt-author-meta mb--20">
+                                                <div class="rbt-avater">
+                                                    <a href="#">
+                                                        <img src="assets/images/client/avatar-02.jpg"
+                                                            alt="Vikrant Tinkhede">
+                                                    </a>
+                                                </div>
+                                                <div class="rbt-author-info">
+                                                    By <a href="profile.html">Vikrant Tinkhede</a> In <a href="#">Data
+                                                        Courses</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="rbt-card-bottom">
+                                                <div class="rbt-price">
+                                                    <span class="current-price">₹8,400/-</span>
+                                                    <span class="off-price">₹14,000/-</span>
+                                                </div>
+                                                <a class="rbt-btn-link" href="python-for-data-science.html">Enroll Now<i class="feather-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Course  -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer_content"></div>
+
+</body>
+
+<script type="text/javascript">
+    $('#header_content').load('header.html');
+    $('#footer_content').load('footer.html');
+</script>
+
+</html>
